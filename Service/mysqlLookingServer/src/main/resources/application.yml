@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: com-staraid-mysql
+  profiles:
+    active: dev
+  mvc:
+    view:
+      prefix: /pages
+  servlet:
+    multipart:
+      max-request-size: 8GB
+      max-file-size: 8GB
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss.SSS
+    locale: zh_CN
+    serialization:
+      indent_output: false
+
+
+
+# 日志记录
+sys-log:
+  # db-数据库，file-文件
+  type: db
+  file-save-path: _sys_logs

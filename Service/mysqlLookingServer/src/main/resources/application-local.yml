@@ -1,0 +1,13 @@
+server:
+  port: 8082
+  max-http-header-size: 10240
+
+spring:
+  datasource:
+    url: jdbc:sqlite:./MySQLooking.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLiteDialect
+      ddl-auto: update

@@ -1,0 +1,22 @@
+server:
+  port: 8081
+  max-http-header-size: 10240
+
+
+spring:
+  datasource:
+    url: jdbc:sqlite:MySQLLooking.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLiteDialect
+      ddl-auto: update
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false # 关闭驼峰命名法
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # mybatisplus日志
+  mapper-locations: classpath:mapper/*.xml
+
+
