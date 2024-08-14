@@ -1,6 +1,5 @@
 package com.staraid.mysql.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.staraid.mysql.Enum.ResultCode;
 import com.staraid.mysql.mapper.DatabaseMapper;
@@ -19,15 +18,15 @@ public class DatabaseServiceImpl extends ServiceImpl<DatabaseMapper, Database> i
     @Override
     public Result addDataBase(Database database) {
         if(baseMapper.insert(database) == 1){
-            return Result.success("操作成功！");
+            return Result.success();
         }else {
-            return Result.error(ResultCode.BAD_REQUEST, "username");
+            return Result.error(ResultCode.BAD_REQUEST);
         }
     }
 
     @Override
     public Result delDataBase(String id) {
         baseMapper.deleteById(id);
-        return Result.success("操作成功！");
+        return Result.success();
     }
 }
