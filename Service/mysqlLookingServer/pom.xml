@@ -15,6 +15,7 @@
         <sqlLite.version>3.36.0.3</sqlLite.version>
 <!--        <hibernate.version>5.6.15.Final</hibernate.version>-->
         <mybatis-plus.verison>3.4.3</mybatis-plus.verison>
+        <mysql-connector-java.version>8.0.21</mysql-connector-java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -42,6 +43,12 @@
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
             <version>${sqlLite.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector-java.version}</version>
         </dependency>
 
         <dependency>

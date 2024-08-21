@@ -9,7 +9,13 @@ public enum ResultCode {
     BAD_REQUEST("400", "error.bad.request"),
     FORBIDDEN("403", "error.forbidden.access"),
 
-    ERROR("500", "error.bad.server");
+    ERROR("500", "error.bad.server"),
+
+    FAIL("400", "error.bad.operate"),
+    DATANOTFIND("404", "error.not.find"),
+    UNAUTHORIZED("400", "fail.un.auth"),
+    DATA_HAS_BEEN_CONNECTION("400", "data.has.been.connection"),
+    ERROR_DONT_KNOW("500", "error.dont.know");
 
     private static final Map<String, ResultCode> CODE_MAP = new HashMap<>();
 

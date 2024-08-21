@@ -3,9 +3,9 @@ spring:
     name: com-staraid-mysql
   profiles:
     active: dev
-  mvc:
-    view:
-      prefix: /pages
+#  mvc:
+#    view:
+#      prefix: /pages
   servlet:
     multipart:
       max-request-size: 8GB
@@ -19,8 +19,8 @@ spring:
 
 
 
-# 日志记录
-sys-log:
-  # db-数据库，file-文件
-  type: db
-  file-save-path: _sys_logs
+## 日志记录
+#sys-log:
+#  # db-数据库，file-文件
+#  type: db
+#  file-save-path: _sys_logs

@@ -1,5 +1,6 @@
 package com.staraid.mysql.utils;
 
+import ch.qos.logback.core.joran.action.Action;
 import com.staraid.mysql.Enum.ResultCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
@@ -15,6 +16,7 @@ public class Result extends HashMap<String, Object> implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private static MessageSource messageSource;
+
 
     @Autowired
     public void setMessageSource(MessageSource messageSource) {
