@@ -13,6 +13,9 @@ import org.springframework.jdbc.datasource.init.DatabasePopulator;
 import org.springframework.jdbc.datasource.init.DatabasePopulatorUtils;
 import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 
+/**
+ * 数据库配置
+ */
 @Configuration
 @Log4j2
 public class DatabaseConfig {

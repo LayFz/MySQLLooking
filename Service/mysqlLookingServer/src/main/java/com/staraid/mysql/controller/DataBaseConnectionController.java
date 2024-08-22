@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 数据库连接controller
+ */
 @RestController
 @RequestMapping("/databases")
 public class DataBaseConnectionController {

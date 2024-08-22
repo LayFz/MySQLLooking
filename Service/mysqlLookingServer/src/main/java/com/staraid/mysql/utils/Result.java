@@ -11,6 +11,9 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Locale;
 
+/**
+ * 返回类
+ */
 @Component
 public class Result extends HashMap<String, Object> implements Serializable {
     private static final long serialVersionUID = 1L;

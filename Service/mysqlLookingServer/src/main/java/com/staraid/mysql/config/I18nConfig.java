@@ -11,6 +11,10 @@ import org.springframework.web.servlet.i18n.FixedLocaleResolver;
 
 import java.util.Locale;
 
+
+/**
+ * 国际化配置
+ */
 @Configuration
 public class I18nConfig {
     @Bean

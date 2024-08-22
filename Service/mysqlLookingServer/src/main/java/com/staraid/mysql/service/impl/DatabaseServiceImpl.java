@@ -63,9 +63,9 @@ public class DatabaseServiceImpl extends ServiceImpl<DatabaseMapper, Database> i
                 case "EXISTS":
                     return Result.error(ResultCode.DATA_HAS_BEEN_CONNECTION);
                 case "NET_WORK_BAD":
-                    return Result.error(ResultCode.DATA_HAS_BEEN_CONNECTION);
+                    return Result.error(ResultCode.NET_WORK_ERROR);
                 case "UN_AUTH":
-                    return Result.error(ResultCode.DATA_HAS_BEEN_CONNECTION);
+                    return Result.error(ResultCode.UN_AUTH_SQL);
                 default:
                     return Result.error(ResultCode.ERROR_DONT_KNOW);
             }

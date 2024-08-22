@@ -3,15 +3,11 @@ package com.staraid.mysql.config;
 import com.staraid.mysql.holder.DatabaseContextHolder;
 import com.staraid.mysql.pojo.Database;
 import com.zaxxer.hikari.HikariDataSource;
-import lombok.extern.log4j.Log4j2;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
-import java.sql.DatabaseMetaData;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
@@ -87,6 +83,11 @@ public class DynamicDataSourceConfig extends AbstractRoutingDataSource {
             dataSources.remove(key);  // 从Map中移除
             afterPropertiesSet();  // 刷新数据源
         }
+    }
+
+    // 获取所有数据源
+    public Map<Object, Object> getDataSources() {
+        return new HashMap<>(dataSources);
     }
 
 

@@ -1,5 +1,8 @@
 package com.staraid.mysql.holder;
 
+/***
+ * 数据源切换
+ */
 public class DatabaseContextHolder {
     private static final ThreadLocal<String> contextHolder = new ThreadLocal<>();
 

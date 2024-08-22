@@ -8,6 +8,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * 数据源实体
+ */
 @TableName("database")
 @Data
 @NoArgsConstructor

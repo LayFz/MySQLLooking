@@ -13,7 +13,6 @@ import java.util.Date;
 /**
  * 时间工具类
  *
- * @author mine
  */
 public class DataUtils extends org.apache.commons.lang3.time.DateUtils
 {

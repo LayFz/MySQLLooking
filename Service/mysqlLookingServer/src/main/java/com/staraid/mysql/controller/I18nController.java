@@ -14,6 +14,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Locale;
 
+/**
+ *  国际化切换controller
+ */
 @RestController
 @RequestMapping("/api/i18n")
 public class I18nController {

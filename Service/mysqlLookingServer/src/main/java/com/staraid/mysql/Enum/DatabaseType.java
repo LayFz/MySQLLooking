@@ -1,5 +1,8 @@
 package com.staraid.mysql.Enum;
 
+/**
+ * 数据库类型
+ */
 public enum DatabaseType {
     MYSQL("mysql"),
     POSTGRESQL("postgresql"),
