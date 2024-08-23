@@ -31,4 +31,7 @@ public interface DatabaseService extends IService<Database> {
 
     // 展示数据库表
     Result showSchemasByTableId(Long dbId);
+
+    // 根据表明查看
+    Result showTables(Long dbId, String dbName);
 }

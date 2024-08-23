@@ -22,4 +22,9 @@ public class DataBaseOperateController {
     public Result showSchemasByTableId(@PathVariable Long dbId){
         return databaseService.showSchemasByTableId(dbId);
     }
+    @GetMapping("/showTables/{dbId}/{dbName}")
+    public Result showTables(@PathVariable Long dbId, @PathVariable String dbName){
+        return databaseService.showTables(dbId, dbName);
+    }
+
 }
