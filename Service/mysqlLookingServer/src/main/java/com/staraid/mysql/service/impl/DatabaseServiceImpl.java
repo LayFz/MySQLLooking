@@ -100,6 +100,11 @@ public class DatabaseServiceImpl extends ServiceImpl<DatabaseMapper, Database> i
         return Result.error(ResultCode.ERROR);
     }
 
+    @Override
+    public Result showTables(Long dbId, String dbName) {
+        return null;
+    }
+
 
     /**
      * 根据实例获取所有数据库

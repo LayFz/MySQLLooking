@@ -18,7 +18,7 @@ public class ConnectionStatusScheduler {
         this.dataSourceConfig = dataSourceConfig;
     }
 
-    @Scheduled(fixedRate = 240000) // 每60秒检查一次
+    @Scheduled(fixedRate = 12000) // 每60秒检查一次
     public void checkConnectionStatuses() {
         for (Map.Entry<Object, Object> entry : dataSourceConfig.getDataSources().entrySet()) {
             HikariDataSource dataSource = (HikariDataSource) entry.getValue();
